@@ -2,7 +2,7 @@
 
 ### Dictionaries ###
 
-# Definición, muy similar a un hasmap de java.
+# Definición, muy similar a un hasmap de java clave:valor, es ordenado y no repite claves. 
 
 my_dict = dict()
 my_other_dict = {}
@@ -24,7 +24,7 @@ my_dict = {
 print(my_other_dict)
 print(my_dict)
 
-print(len(my_other_dict))
+print(len(my_other_dict)) 
 print(len(my_dict))
 
 # Búsqueda

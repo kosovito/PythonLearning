@@ -34,3 +34,21 @@ if not my_string:
 
 if my_string == "Mi cadena de textoooooo":
     print("Estas cadenas de texto coinciden")
+    
+#Para simular un switch case, que no exite en python usamos if, elif y else, o si es devolver un valor
+#un diccionario, ejemplo dias de la semana y frase
+# Definir el diccionario
+
+dia = "Viernes"
+
+dias = {
+"lunes": "Hoy es lunes y el cuerpo lo sabe.",
+"martes": "Hoy es martes y toca trabajar duro.",
+"miércoles": "Hoy es miércoles y estamos a mitad de semana.",
+"jueves": "Hoy es jueves y ya se siente el fin de semana.",
+"viernes": "Hoy es viernes y el cuerpo lo celebra.",
+"sábado": "Hoy es sábado y hay que disfrutarlo.",
+"domingo": "Hoy es domingo y hay que descansar."
+}
+
+print(dias.get(dia.lower(), "No es un día válido."))

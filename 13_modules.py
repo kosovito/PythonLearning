@@ -4,7 +4,7 @@
 
 from math import pi as PI_VALUE
 import math
-from my_module import sumValue, printValue
+from my_module import sumValue, printValue # si queremos importar todas, import *
 import my_module
 
 my_module.sumValue(5, 3, 1)

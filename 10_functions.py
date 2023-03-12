@@ -14,8 +14,8 @@ my_function()
 
 # Función con parámetros de entrada/argumentos
 
-
-def sum_two_values(first_value: int, second_value):
+#la defición del tipo de dato de entrada y salida es simbolica, no lo restringe
+def sum_two_values(first_value: int, second_value)->int: #->int define el valor de salida pero no restringe
     print(first_value + second_value)
 
 
@@ -38,16 +38,23 @@ print(my_result)
 my_result = sum_two_values_with_return(10, 5)
 print(my_result)
 
+#si queremos que la función verifique los tipos para seguir o no, podemos hacer esto
+
+def sum_two_values_verifyint(first_value: int, second_value: int)->int:
+    if not isinstance(first_value, int) or not isinstance(second_value, int):
+        print(first_value + second_value)
+    return first_value + second_value
+
 # Función con parámetros de entrada/argumentos por clave
 
 
 def print_name(name, surname):
     print(f"{name} {surname}")
 
-
+#podemos invocar la función cambiando el orden de parámetros, si los etiquetamos y asignamos valor
 print_name(surname="Moure", name="Brais")
 
-# Función con parámetros de entrada/argumentos por defecto
+# Función con parámetros de entrada/argumentos por defecto, al tener un valor, puede omitirse en la invocación
 
 
 def print_name_with_default(name, surname, alias="Sin alias"):
